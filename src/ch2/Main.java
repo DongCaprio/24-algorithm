@@ -1,9 +1,9 @@
-package ch1;
+package ch2;
 
 import java.util.Scanner;
 
 /**
- * 암호
+ * 큰수출력하기
  */
 class Main {
 	public String solution(String str, char c) {
