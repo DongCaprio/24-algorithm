@@ -2,9 +2,6 @@ package ch2;
 
 import java.util.Scanner;
 
-/**
- * 큰수출력하기
- */
 class Main {
 	public String solution(String str, char c) {
 		String answer = "";
