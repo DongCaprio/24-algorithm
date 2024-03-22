@@ -4,6 +4,7 @@ class Main {
 	public String solution(String str, char c) {
 		String answer = "";
 		String answer2 = "나 변경했다~~~~~~~~~~~~~~~~~";
+		String answer3 = "나 변경했다~~~~~~~~~~~~~~~~~";
 		return answer;
 	}
 	
