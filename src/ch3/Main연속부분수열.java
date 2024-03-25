@@ -34,7 +34,6 @@ class Main연속부분수열 {
 				answer++;
 			}
 			sum=0;
-			continue;
 		}
 		return answer;
 	}
