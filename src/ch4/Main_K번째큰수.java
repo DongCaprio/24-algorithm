@@ -31,9 +31,14 @@ class Main_K번째큰수 {
 			for(int j=i+1; j<n-1; j++) {
 				for(int l=j+1; l<n;l++) {
 					set.add(arr[i]+arr[j]+arr[l]);
-				}
+				} 
 			}
 		}
+		
+//		for(int i = 5; i<4; i--) {
+//			System.out.println("i : "+i);
+//		}
+		
 		List<Integer> list = new ArrayList<>(set);
 		if(list.size() <= k-1) return -1;
 		return list.get(k-1);
