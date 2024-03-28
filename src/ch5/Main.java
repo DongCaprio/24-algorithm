@@ -1,6 +1,6 @@
 package ch4;
 
-import java.util.*;
+import java.util.Scanner;
 
 class Main {
 	public int solution(String s, String t) {
