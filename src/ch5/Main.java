@@ -1,4 +1,5 @@
 package ch5;
+
 import java.util.Scanner;
 
 class Main {
