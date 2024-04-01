@@ -1,4 +1,4 @@
-package ch5;
+package ch6;
 
 import java.util.HashSet;
 import java.util.Scanner;
