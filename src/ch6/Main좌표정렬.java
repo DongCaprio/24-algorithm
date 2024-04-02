@@ -42,10 +42,10 @@ class Point implements Comparable<Point>{
 	}
 }
 
-class Main {
+class Main좌표정렬 {
 
 	public static void main(String[] args) {
-		Main T = new Main();
+		Main좌표정렬 T = new Main좌표정렬();
 		Scanner kb = new Scanner(System.in);
 		int n = kb.nextInt();
 		ArrayList<Point> arr = new ArrayList<>();
