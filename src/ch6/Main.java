@@ -7,6 +7,7 @@ class Main {
 		int answer = 0;
 		int answer2 = 0;
 		int answer3 = 0;
+		int answer4 = 0;
 
 
 
