@@ -6,6 +6,7 @@ class Main {
 	public int solution(int n, int m, int[] arr) {
 		int answer = 0;
 		int answer2 = 0;
+		int answer3 = 0;
 
 
 
