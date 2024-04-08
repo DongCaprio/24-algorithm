@@ -2,16 +2,20 @@ package ch6;
 import java.util.Scanner;
 
 class Main {
-	public String solution(String str, char c) {
-		String answer = "";
+	public int solution(int n, int c, int[] arr) {
+		int answer = 0;
+		
+		
 		return answer;
 	}
 	
 	public static void main(String[] args) {
 		Main T = new Main();
 		Scanner kb = new Scanner(System.in);
-		String str = kb.next();
-		char c = kb.next().charAt(0);
-		System.out.println(T.solution(str, c));
+		int n = kb.nextInt();
+		int c = kb.nextInt();
+		int[] arr = new int[n];
+		for(int i=0; i<n; i++) arr[i] = kb.nextInt();
+		System.out.println(T.solution(n, c, arr));
 	}
 }
