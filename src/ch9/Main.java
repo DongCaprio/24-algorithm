@@ -22,16 +22,19 @@ class Lecture implements Comparable<Lecture>{
 }
 class Main {
 
-	static int max = 0;
+	static int n, max = 0;
 	public int solution(ArrayList<Lecture> list) {
 		int answer = 0;
 		PriorityQueue<Integer> pQ = new PriorityQueue<>(Collections.reverseOrder());
 		Collections.sort(list);
 		int j=0;
-		for(int i=max; i>=1; i--){
-			//강의 이어서 듣기
+		for(int i=max; i>=1; i--){ //i는 day의 최댓값
+			for(; j<n; j++){
+				if(list.get(j).day<i) break;
+				pQ.offer(list.get(j).money);
+			}
+			if(!pQ.isEmpty()) answer+=pQ.poll();
 		}
-
 
 		return answer;
 	}
@@ -39,7 +42,7 @@ class Main {
 	public static void main(String[] args) {
 		Main T = new Main();
 		Scanner kb = new Scanner(System.in);
-		int n = kb.nextInt();
+		n = kb.nextInt();
 		ArrayList<Lecture> list = new ArrayList<>();
 		for(int i=0; i<n; i++){
 			int money = kb.nextInt();
