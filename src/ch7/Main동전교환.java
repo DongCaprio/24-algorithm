@@ -9,12 +9,12 @@ class Main동전교환 {
 	static int n, m, answer = Integer.MAX_VALUE;
 	static Integer[] arr;
 	public void solution(int L, int sum) {
-		if(sum>m) return;
-		if(L>=answer) return;
+		if(sum > m) return;
+		if(L >= answer) return;
 		if(sum == m){
-			answer = Math.min(answer, L);
+			answer = Math.min(L, answer);
 		}else{
-			for(int i=0; i<n; i++){
+			for(int i=0; i<arr.length; i++){
 				solution(L+1, sum+arr[i]);
 			}
 		}
@@ -26,9 +26,8 @@ class Main동전교환 {
 		n = kb.nextInt();
 		arr = new Integer[n];
 		for(int i=0; i<n; i++) arr[i] = kb.nextInt();
-		m = kb.nextInt();
 		Arrays.sort(arr, Collections.reverseOrder());
-
+		m = kb.nextInt();
 		T.solution(0,0);
 		System.out.println(answer);
 	}
